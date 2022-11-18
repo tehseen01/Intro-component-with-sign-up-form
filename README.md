@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/codebyishan/Intro-component-with-sign-up-form.git)
-- Live Site URL: [Netlify](https://codebyishan-intro-component-with-sign-up-form.netlify.app)
+- Live Site URL: [Netlify](https://codebyishan-intro-component-with-sign.netlify.app)
 
 ## My process
 
