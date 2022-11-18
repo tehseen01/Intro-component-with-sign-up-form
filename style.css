@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ===================
+*****CSS RESET*****
+=================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: normal;
+}
+
+/* ====================
+-------MOBILE FIST-----
+======================= */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: no-repeat url(./images/bg-intro-mobile.png), hsl(0, 100%, 74%);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+article {
+  max-width: 85vw;
+  margin: auto;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.disc {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.try-offer {
+  background: hsl(248, 32%, 49%);
+  color: #fff;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.try-offer span {
+  font-weight: 700;
+}
+
+.form-container {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5rem;
+}
+
+.form input {
+  padding: 0.8rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  color: hsl(249, 10%, 26%);
+}
+
+.form input:focus-within {
+  border: 1px solid hsl(249, 10%, 26%);
+}
+
+input::placeholder {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background-color: hsl(154, 59%, 51%);
+  outline: none;
+  color: #fff;
+  padding: 1rem 0;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.term {
+  font-size: 13px;
+  color: hsl(246, 25%, 77%);
+  margin: 1rem 0;
+}
+
+.term a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+.error-box {
+  position: relative;
+  display: none;
+}
+.error-box .error-text {
+  text-align: end;
+  color: hsl(0, 100%, 74%);
+  margin-top: -0.5rem;
+  margin-right: 0.5rem;
+  font-style: italic;
+  font-size: 0.83rem;
+  display: block;
+}
+
+.error-icon {
+  position: absolute;
+  top: -2.5rem;
+  right: 0.5rem;
+  width: 1.2rem;
+}
+
+/* ====================
+-------DESKTOP---------
+======================= */
+
+@media (min-width: 800px) {
+  body {
+    background: no-repeat url(./images/bg-intro-desktop.png) hsl(0, 100%, 74%);
+    background-size: cover;
+  }
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 75vw;
+  }
+
+  .col-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  .disc {
+    margin: 0;
+  }
+  .form-container {
+    padding: 2.5rem;
+  }
+
+  .form {
+    row-gap: 1.2rem;
+  }
+
+  .form input {
+    padding: 1.2rem;
+    font-weight: 600;
+  }
+
+  input::placeholder {
+    font-weight: 600;
+  }
+
+  .btn {
+    padding: 1.5rem 0;
+  }
+
+  .error-box .error-text {
+    margin-top: -1rem;
+    font-size: 0.93rem;
+  }
+
+  .error-icon {
+    top: -3.8rem;
+    right: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .try-offer {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  .term {
+    margin-bottom: 0;
+  }
+}
